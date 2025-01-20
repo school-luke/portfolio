@@ -3,94 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>My Totally Radical Website</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 1rem 0;
+            background: url('https://www.example.com/ugly-tile-texture.jpg') repeat;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            color: #00ff00;
             text-align: center;
         }
-        nav {
-            margin: 1rem 0;
-            text-align: center;
+
+        h1 {
+            font-size: 48px;
+            color: #ff00ff;
+            text-shadow: 2px 2px 0 #000000;
         }
-        nav a {
-            text-decoration: none;
-            color: #333;
-            margin: 0 1rem;
+
+        marquee {
+            color: #ff0000;
+            font-size: 24px;
             font-weight: bold;
         }
-        nav a:hover {
-            color: #007BFF;
+
+        .blinking-text {
+            animation: blink 1s infinite;
         }
-        .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        @keyframes blink {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
         }
-        .project {
-            margin-bottom: 2rem;
-        }
-        .project a {
-            display: inline-block;
-            margin-top: 0.5rem;
-            color: #007BFF;
+
+        a {
+            color: #0000ff;
             text-decoration: none;
         }
-        .project a:hover {
+
+        a:hover {
             text-decoration: underline;
         }
-        footer {
-            text-align: center;
-            margin-top: 2rem;
-            padding: 1rem 0;
-            background-color: #333;
-            color: white;
+
+        .rainbow-border {
+            border: 5px dashed;
+            border-image-source: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+            border-image-slice: 1;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        img {
+            border: 5px solid #ff0000;
+            border-radius: 50%;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-        <p>Welcome to my portfolio! Here are some of my projects:</p>
-    </header>
+    <h1>Welcome to My Cool Website!</h1>
+    <marquee behavior="scroll" direction="left">Check out my amazing website skills!</marquee>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <div class="container" id="projects">
-        <h2>Projects</h2>
-        
-        <!-- Add project links here -->
-        <div class="project">
-            <h3>the skibidi project</h3>
-            <p>this is the SKIBIDI!!!.</p>
-            <a href="https://example.com/project1" target="_blank">View Project</a>
-        </div>
-
-        <div class="project">
-            <h3>the rizz project</h3>
-            <p>rizz</p>
-            <a href="https://example.com/project2" target="_blank">View Project</a>
-        </div>
-
+    <div class="rainbow-border">
+        <p class="blinking-text">This text blinks because it's SUPER COOL!</p>
+        <p>Click <a href="https://www.example.com" target="_blank">here</a> for a totally awesome link!</p>
     </div>
 
+    <img src="https://www.example.com/ugly-image.jpg" alt="Cool Graphic" width="200">
+
     <footer>
-        <p>&copy; 2025 skibidi rizz. All rights reserved.</p>
+        <p>&copy; 2000 My Amazing Website. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
